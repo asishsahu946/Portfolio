@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { image } from "../assets/image";
+import { IconButton, Typography } from "@material-tailwind/react";
+import { useCopyToClipboard } from "usehooks-ts";
+import { CheckIcon, DocumentDuplicateIcon } from "@heroicons/react/24/outline";
 
 function Contact() {
+  const [value, copy] = useCopyToClipboard();
+  const [copied, setCopied] = useState(false);
   return (
     <div>
       <div className="bg-[#030712] text-center p-14">
@@ -15,17 +20,38 @@ function Contact() {
           <br className="md:hidden" /> developer, have a query, or simply want
           to connect.
         </p>
-        <h1 className="text-[#f9fafb] font-extrabold pt-7">
-          {" "}
-          <img className="w-7 inline" src={image.mail} alt="" />{" "}
-          asishsahu9462gmail.com{" "}
-          <img className="w-6 inline" src={image.copy} alt="" />
-        </h1>
-        <h1 className="text-[#f9fafb] font-extrabold pt-2">
-          <img className="w-7 inline" src={image.call} alt="" /> +91
-          8895708555{" "}
-          <img className="w-6 inline" src={image.copy} alt="" />
-        </h1>
+        <div className="flex items-center gap-x-4 justify-center text-white mt-4">
+        <Typography variant="lead" className="font-bold">asishsahu946@gmail.com</Typography>
+        <IconButton
+          onMouseLeave={() => setCopied(false)}
+          onClick={() => {
+            copy("asishsahu946@gmail.com");
+            setCopied(true);
+          }}
+        >
+          {copied ? (
+            <CheckIcon className="h-5 w-5 text-white" />
+          ) : (
+            <DocumentDuplicateIcon className="h-5 w-5 text-white" />
+          )}
+        </IconButton>
+      </div>
+        <div className="flex items-center gap-x-4 justify-center  text-white">
+        <Typography variant="lead" className="font-bold">+91 8895708555</Typography>
+        <IconButton
+          onMouseLeave={() => setCopied(false)}
+          onClick={() => {
+            copy("+91 8895708555");
+            setCopied(true);
+          }}
+        >
+          {copied ? (
+            <CheckIcon className="h-5 w-5 text-white" />
+          ) : (
+            <DocumentDuplicateIcon className="h-5 w-5 text-white" />
+          )}
+        </IconButton>
+      </div>
         <p className="text-[#d1d5db] pt-5">
           You may also find me on these platforms!
         </p>

@@ -4,7 +4,7 @@ import { image } from "../assets/image";
 
 function Projects() {
   return (
-    <div className="bg-[#030712] pb-6">
+    <div className="bg-[#030712] pb-6 px-14">
       <div className="flex items-center justify-center ">
         <p className=" bg-[#374151] text-[#f9fafb] font-bold rounded-xl px-4 py-1 mt-16 ">
           Projects
