@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import { Tooltip } from "flowbite-react";
+import {image} from '../assets/image'
 
 
 
