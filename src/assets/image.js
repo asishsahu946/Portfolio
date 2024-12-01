@@ -19,6 +19,7 @@ import myimage from './my-image.jpg'
 import coding from './coding-web-development.svg'
 import threeline from './three-line-horizontal.svg'
 import projectimage from './project-img.png'
+import streamingAppProject from './Streaming-Project-screenshot.png'
 import closecircle from './close-circle.svg'
 import testimage from './test-img.jpeg'
 
@@ -45,6 +46,7 @@ export const image =
         coding,
         threeline,
         projectimage,
+        streamingAppProject,
         closecircle,
         testimage,
 

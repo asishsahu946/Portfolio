@@ -18,7 +18,7 @@ function Projects() {
       {/* Project section 1 */}
       <div className="bg-[#374151] mx-7 my-9 lg:flex justify-center rounded-lg ">
         {/* left section */}
-        <img className=" mx-auto my-auto lg:mx-[10%] py-14 w-full h-full rounded-2xl " src={image.projectimage} alt="" />
+        <img className="mx-auto my-auto lg:mx-[10%] py-14 w-[51%] rounded-2xl overflow-hidden" src={image.streamingAppProject} alt="" />
         {/* Right section */}
         <div className="bg-[#1f2937] text-[#f9fafb] pl-9 p-9  rounded-bl-lg rounded-br-lg lg:rounded-bl-none lg:rounded-tr-lg ">
           <h1 className="font-bold text-lg">Fiskil</h1>
