@@ -21,9 +21,7 @@ import project3Img from './doctorBookingProject.png'
     {
         image: project3Img,
         title: 'Doctor Booking Website',
-        overview: `Doctor Booking Appointment System: Developed a dynamic React.js application to streamline patient-doctor appointment scheduling with an intuitive user interface.
-Efficient State Management: Leveraged Context API to handle complex state transitions, ensuring optimal performance and maintainability.
-Feature-Rich Design: Implemented responsive design, real-time updates, and seamless navigation for improved user experience.`,
+        overview: `Developed a dynamic React.js application to streamline patient-doctor appointment scheduling with an intuitive user interface. Leveraged Context API to handle complex state transitions, ensuring optimal performance and maintainability. Implemented responsive design, real-time updates, and seamless navigation for improved user experience.`,
         techUsed: ['React.js', 'Tailwind', 'Figma'],
         link: 'https://doctor-booking-appointment-react.vercel.app/'
     },
