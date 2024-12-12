@@ -20,7 +20,7 @@ function Projects() {
           data.map((item,index) => {
             return <div className="bg-[#374151] mx-7 md-max:mx-2 my-9 lg:flex justify-center rounded-lg ">
         {/* left section */}
-        <img className="mx-auto my-auto  px-3 md-max:px-2 py-14 md-max:py-2 w-[750px] md-max:w-full" src={item.image} alt="" />
+        <img className="mx-auto my-auto  px-3 md-max:px-2 py-14 md-max:py-2 w-[750px] xl-max:w-[599px] md-max:w-full" src={item.image} alt="" />
         {/* Right section */}
         <div className="bg-[#1f2937] text-[#f9fafb] pl-9 md-max:pl-3 p-9 md-max:p-5 rounded-bl-lg rounded-br-lg lg:rounded-bl-none lg:rounded-tr-lg ">
           <h1 className="font-bold text-lg">{item.title}</h1>
